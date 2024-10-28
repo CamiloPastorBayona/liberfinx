@@ -5,8 +5,8 @@ import java.sql.SQLException;
 
 public class Conexiondb {
         private static String url = "jdbc:mysql://localhost:3306/liberfinx";
-        private static String user = "admin";
-        private static String pass = "Admin12345*";
+        private static String user = "root";
+        private static String pass = "123456";
         private static Connection con = null;
 
         public static Connection GetConexion()

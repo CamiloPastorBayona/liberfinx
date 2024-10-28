@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Liberfinx</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="/imagenes/Logo.png" alt="Logo">
+        </div>
+        <nav class="menu-principal">
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Cuentas</a></li>
+                <li><a href="#">Informes</a></li>
+                <li><a href="#">Categorías</a></li>
+                <li><a href="#">Gestor de gastos</a></li>
+                <li><a href="#">Metas</a></li>
+                <li><a href="#">Ajustes</a></li>
+            </ul>
+        </nav>
+        <div class="perfil">
+            <img src="/imagenes/imgperfil.png" alt="Perfil">
+            <span>Hola, Camilo Pastor</span>
+        </div>
+    </header>
+
+    <div class="container">
+        <section class="calendario">
+            <h3>Calendario</h3>
+            <p>Revisa aquí tus movimientos</p>
+            <div class="mes">
+                <p class="nombre-mes">Octubre</p>
+                <div class="dias">
+                    <span>1</span><span>2</span><span>3</span><span>4</span><span>5</span>
+                    <span>6</span><span>7</span><span>8</span><span>9</span><span>10</span>
+                    <span>11</span><span>12</span><span>13</span><span>14</span><span>15</span>
+                    <span>16</span><span>17</span><span>18</span><span>19</span><span>20</span>
+                    <span>21</span><span>22</span><span>23</span><span>24</span><span>25</span>
+                    <span>26</span><span>27</span><span>28</span><span>29</span><span>30</span>
+                    <span>31</span>
+                </div>
+                <div class="notas">
+                    <h4>Notas</h4>
+                    <p>Aqui podrás ver tus notas mas recientes</p>
+                    <ul>
+                        <li>Pagar recibo de luz</li>
+                        <li>Recordar agregar compromisos bancarios</li>
+                        <li>Agregar ahorro a la cuenta</li>
+                        <li>Iniciar nueva meta para viajar</li>
+                    </ul>
+                    <div class="notas-buttons">
+                        <button class="minus">-</button>
+                        <button class="plus">+</button>
+                        <button class="ir-notas">Ir a notas</button>
+                    </div>    
+                </div>
+            </div>
+        </section>
+
+        <section class="gastos">
+            <h3>Gastos</h3>
+            <p>Por categoria</p>
+            <div class="grafico">
+                <!-- Aquí iría un gráfico circular -->
+                <div class="grafico-info">
+                    <span>45% Arriendo</span>
+                </div>
+                <ul>
+                    <li><span style="background-color: #b1ff39"></span> Arriendo</li>
+                    <li><span style="background-color: #ff8a39"></span> Salidas</li>
+                    <li><span style="background-color: #39a1ff"></span> Comida</li>
+                    <li><span style="background-color: #ffffff"></span> Recibos</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="balance">
+            <h3>Balance</h3>
+            <p>Por mes</p>
+            <div class="ingresos">Ingresos: $5,800,000</div>
+            <div class="gastos">Gastos: $1,900,000</div>
+            <div class="balance-total">Balance: $3,900,000</div>
+        </section>
+
+        <section class="historial-gastos">
+            <h3>Historial de gastos</h3>
+            <p> más recientes</p>
+            <ul>
+                <li>Arriendo: $1,200,000</li>
+                <li>Mercado fruver: $820,670</li>
+                <li>Ahorro: $950,000</li>
+                <li>Salida cine: $245,900</li>
+                <li>Mercado fruver: $820,670</li>
+                <li>Ahorro: $950,000</li>
+                <li>Salida cine: $245,900</li>
+                <li>Mercado fruver: $820,670</li>
+                <li>Ahorro: $950,000</li>
+                <li>Salida cine: $245,900</li>
+            </ul>
+            <button>Ir al historial de gastos</button>
+        </section>
+
+        <section class="estadisticas-gastos">
+            <h3>Estadísticas de gastos (Año 2024)</h3>
+            <!-- Gráfico de barras -->
+            <div class="grafico-barras">
+                <div class="barra" style="height: 100px;"></div>
+                <div class="barra" style="height: 120px;"></div>
+                <div class="barra" style="height: 80px;"></div>
+                <!-- Añadir más barras según los datos -->
+            </div>
+        </section>
+
+        <section class="consejo-financiero">
+            <h3>Consejo Financiero</h3>
+            <p>El ahorro de hoy es la libertad de mañana</p>
+        </section>
+
+        <section class="agregar">
+            <p>+</p>
+        </section>    
+        
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

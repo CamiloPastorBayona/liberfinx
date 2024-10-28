@@ -1,0 +1,239 @@
+/* Estilos generales */
+body {
+    font-family: montserrat;
+    background-color: #1f2529;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #1f2529;
+}
+
+.logo img {
+    width: 75px;
+}
+
+.menu-principal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #313537;
+    border-radius: 36px;
+    padding: 10px 35px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: #ffff;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.perfil {
+    display: flex;
+    align-items: center;
+}
+
+.perfil img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.perfil span {
+    color: #ffffff;
+}
+
+/* Estilos del container principal */
+.container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    grid-gap: 10px;
+    padding: 20px;
+}
+
+section {
+    background-color: #313537;
+    padding: 50px;
+    border-radius: 25px;
+}
+
+section h3 {
+    font-size: 36px;
+    color: #ffff;
+    font-weight: 700;
+    margin: 0;
+}
+
+.calendario .mes {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.calendario .dias {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+}
+
+.nombre-mes {
+    font-size: 26px;
+    text-align: center;
+}
+
+.calendario .dias span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:  #1f2529;
+    padding: 15px;
+    margin: 2px;
+    border-radius: 50px;
+}
+
+.grafico {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grafico-info span {
+    color: #ddf528;
+    font-size: 24px;
+}
+
+.balance {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.balance .ingresos, .balance .gastos, .balance .balance-total {
+    background-color: #848588;
+    padding: 15px;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+.historial-gastos ul {
+    list-style: none;
+    padding: 0;
+}
+
+.historial-gastos ul li {
+    padding: 10px 0;
+    border-bottom: 1px solid #505060;
+}
+
+.estadisticas-gastos .grafico-barras {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.estadisticas-gastos .barra {
+    width: 20px;
+    background-color: #ddf528;
+}
+
+.notas {
+    width: 100%;
+}
+
+.notas ul {
+    list-style: none;
+    padding: 0;
+}
+
+.notas ul li {
+    background-color: #848588;
+    padding: 10px;
+    margin-bottom: 5px;
+}
+
+.notas-buttons {
+    display: flex; /* Activamos Flexbox */
+    gap: 10px; /* Espacio entre botones */
+}
+
+button {
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 50%; /* Para los botones de "-" y "+" */
+}
+
+.minus, .plus {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: gray; /* Color para distinguirlos */
+}
+
+.ir-notas {
+    flex: 1; /* Este botón ocupará el resto del espacio */
+    background-color: #ddf528;
+    padding: 10px 0;
+    text-align: center;
+    border-radius: 20px;
+    max-width: 100%; /* Evitamos que se desborde */
+}
+
+.consejo-financiero {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    background-color: #ffff;
+    color: #1e1e2f;
+    padding: 50px;
+    border-radius: 25px;
+    text-align: center;
+}
+
+.consejo-financiero h3{
+    color: #1e1e2f;
+}
+
+.agregar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+}
+
+button {
+    cursor: pointer;
+    width: 100%;
+    padding: 10px 20px;
+    background-color: #ddf528;
+    border: none;
+    color: #1e1e2f;
+    font-size: 16px;
+    border-radius: 25px;
+}
+
+button:hover {
+    background-color: #ddf528;
+}

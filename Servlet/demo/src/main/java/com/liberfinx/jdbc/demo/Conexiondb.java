@@ -12,7 +12,6 @@ public class Conexiondb {
     public static Connection GetConexion() {
         if (con == null) {
             try {
-                // Registrar el driver MySQL
                 Class.forName("com.mysql.cj.jdbc.Driver");
                 con = DriverManager.getConnection(url, user, pass);
             } catch (SQLException | ClassNotFoundException e) {

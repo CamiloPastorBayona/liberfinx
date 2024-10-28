@@ -35,7 +35,5 @@ public class UsuarioControlador {
     {
         List<Usuario> usuarios = usuarioCRUD.obtenerUsuarios();
         return usuarios;
-
-
     }
 }

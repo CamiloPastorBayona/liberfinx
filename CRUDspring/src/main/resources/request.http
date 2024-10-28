@@ -1,0 +1,33 @@
+### Obtener todos los usuarios
+GET http://localhost:8080/api/v1/usuarios
+Accept: application/json
+
+### Obtener usuario por ID
+GET http://localhost:8080/api/v1/usuarios/8
+Accept: application/json
+
+### Crear un usuario
+POST http://localhost:8080/api/v1/usuarios
+Content-Type: application/json
+
+{
+  "nombre": "Lenardo instructor",
+  "correo_electronico": "leonardo@example.com",
+  "contrasena": "123456",
+  "imagen_perfil": "url_de_imagen"
+}
+
+### Actualizar un usuario existente
+POST http://localhost:8080/api/v1/usuarios
+Content-Type: application/json
+
+{
+  "usuarioID": 8,
+  "nombre": "Leonardo Actualizado",
+  "correo_electronico": "actualizado@example.com",
+  "contrasena": "3456",
+  "imagen_perfil": "nueva_url_de_imagen"
+}
+
+### Eliminar usuario por ID
+DELETE http://localhost:8080/api/v1/usuarios/7
